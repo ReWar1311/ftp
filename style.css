@@ -1,3 +1,8 @@
+*{
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
 .container{
     display: flex;
     flex-direction: row;
@@ -8,11 +13,11 @@
     background-size: cover;
     background-position: center; ;
     border-radius: 5vw;
-    flex: 0.08;
+    flex: 0.05;
     transition: flex 0.5s ease-out;
 }
 .active{
-    flex: .6;
+    flex: .7;
     display: flex;
     align-items: end;
 
@@ -28,4 +33,5 @@
 
 h3{
     opacity: 0;
+    font-size: larger;
 }
