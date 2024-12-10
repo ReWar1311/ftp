@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card{
+    height: 90vw;
+    background-size: cover;
+    background-position: center; ;
+    border-radius: 5vw;
+    flex: 0.08;
+    transition: flex 0.5s ease-out;
+}
+.active{
+    flex: .6;
+    display: flex;
+    align-items: end;
+
+}
+.active h3{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    padding-left: 5%;
+    transition: opacity 1s ease-in-out;
+    text-shadow: aqua 1px 1px 1px 0.1s;
+}
+
+
+h3{
+    opacity: 0;
+}

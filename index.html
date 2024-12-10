@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card active" style="background-image: url(./300719.jpg)"><h3>Cat</h3></div>
+        <div class="card" style="background-image: url(./300706.jpg)"><h3>Eagle</h3></div>
+        <div class="card" style="background-image: url(./300803.jpg)"><h3>Beach</h3></div>
+        <div class="card" style="background-image: url(./301016.jpg)"><h3>Fairytale</h3></div>
+        <div class="card" style="background-image: url(./301291.jpg)"><h3>Offroad Car</h3></div>
+    </div>
+    <script>
+    const cards =document.querySelectorAll(".card")
+    cards.forEach((card) => {
+            card.addEventListener("click",() =>{
+                remoceActiveClasses();
+                card.classList.add("active");
+        });
+    });
+    function remoceActiveClasses(){
+        cards.forEach((card) => {
+            card.classList.remove("active");
+        });
+    }
+    </script>
+</body>
+</html>
